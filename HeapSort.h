@@ -25,11 +25,11 @@ public:
         int l = 2*i + 1;
         int r = 2*i + 2;
 
-        if (l < n && (cnt.begin()+l > cnt.begin()+largest))
+        if (l < n && (*(cnt.begin()+l) > *(cnt.begin()+largest)))
                 largest = l;
 
-        if (r < n && (cnt.begin()+r > cnt.begin()+largest))
-            largest = r;
+        if (r < n && (*(cnt.begin()+r) > *(cnt.begin()+largest)))
+                largest = r;
 
         if (largest != i)
         {

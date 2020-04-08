@@ -1,4 +1,4 @@
-#include "Heapsort.h"
+#include "HeapSort.h"
 #include "MergeSort.h"
 #include "QuickSort.h"
 #include "InsertionSort.h"
@@ -10,7 +10,11 @@ template<typename Metodo>
 class Sort : private Metodo{
 public:
     template<typename container>
-    void operator()(container &cnt){
+    Sort( container &cnt){
         this-> sort(cnt);
-    }   
+      
+    };
+    
+
 };
+
